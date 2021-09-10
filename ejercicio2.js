@@ -1,6 +1,6 @@
 /* 
 Punto 01
-Crear una función constructora la cual vamos a llamar cComputadora, deberá tener las siguientes propiedades:
+Crear una función constructora la cual vamos a llamar Computadora, deberá tener las siguientes propiedades:
 */
 function Computadora(ram, cpu, disco, monitor, gpu){
     this.ram = ram;
@@ -12,7 +12,8 @@ function Computadora(ram, cpu, disco, monitor, gpu){
 
 /* 
 Punto 02
-Crear una función constructora la cual vamos a llamar cComputadora, deberá tener las siguientes propiedades:
+Crear 5 computadoras distintas y guardarlas (Array) de manera que luego podamos consultar cuántas computadoras tenemos y poder mostrarlas por consola. 
+Además queremos ver el detalle de cada computadora por consola.
 */
 const computadoras = [];
 computadoras.push(new Computadora('8GB', 'AMD RYZEN 5', '200GB SSD', 'Monitor Asus', true),
@@ -24,7 +25,7 @@ console.log(computadoras);
 
 /* 
 Punto 03
-Crear una función constructora la cual vamos a llamar cComputadora, deberá tener las siguientes propiedades:
+Crear un nuevo Array a partir del primero, donde vamos a guardar solamente las computadoras con gpu.
 */
 const computadorasConGPU = computadoras.filter(compu => compu.gpu);
 console.log(computadorasConGPU);
