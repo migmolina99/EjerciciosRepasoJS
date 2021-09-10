@@ -42,3 +42,44 @@ const litros = calcularLitrosNafta(500);
 const precio = calcularPrecioRecorrido(litros, 200);
 console.log('Litros de nafta consumidos: ' + litros);
 console.log('Precio total: ' + precio);
+
+
+/*
+Punto 05
+Crear un array que contenga números del 1 al 10. Retornar un nuevo array que contenga todos los números multiplicados por dos
+*/
+const numeros = [];
+for(let i = 1; i <= 100; i++) {
+    numeros.push(i);
+}
+const numerosPorDos = numeros.map(num => num*2);
+console.log(numerosPorDos);
+
+/*
+Punto 06
+Del array que devuelve el ejercicio número 5, filtrar los que sean mayores a 5
+*/ 
+const numerosFiltrados = numerosPorDos.filter(num => num > 5);
+console.log(numerosFiltrados);
+
+/*
+Punto 07
+Del array que devuelve el ejercicio 6, buscar el primero que sea mayor a 10
+*/
+const primerNum = numerosFiltrados.find(num => num > 10);
+console.log(primerNum);
+
+/*
+Punto 08
+Dado el siguiente array filtremos a los pokemones con poder menor a 10.
+*/
+const pokemones = [ 
+    { nombre: 'pikachu', poder: 12 }, 
+    { nombre: 'bulbasaurbolbasor', poder: 6 }, 
+    { nombre: 'charizardcharizar', poder: 19 }, 
+    { nombre: 'squirtlesquartle', poder: 3 }, 
+    { nombre: 'mnewto', poder: 6 }, 
+]
+
+const pokemonesFiltrados = pokemones.filter(pokemon => pokemon.poder < 10);
+console.log(pokemonesFiltrados);
